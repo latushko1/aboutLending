@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Landing</title>
+</head>
+<body class="box-border">
+    
+    <header id="home" class="relative">
+        <div class="container">
+            <nav class="mt-[25px] ">
+                <ul class="flex lg:hidden">
+                    <li class="mr-[150px] text-secondary hover:text-primary hover:underline transition-all"><a href="#home">Home</a></li>
+                    <li class="mr-[150px] text-secondary hover:text-primary hover:underline transition-all"><a href="#about">About me</a></li>
+                    <li class="mr-[150px] text-secondary hover:text-primary hover:underline transition-all"><a href="#skills">Skills</a></li>
+                    <li class="mr-[150px] text-secondary hover:text-primary hover:underline transition-all"><a href="#Portfolio">Portfolio</a></li>
+                    <li class="text-secondary hover:text-primary hover:underline transition-all"><a href="#Contacts">Contacts</a></li>
+                </ul>
+
+                <ul class="absolute hidden left-6 right-6 top-24 bg-black  flex-col justify-center items-center text-black" id="menu">
+                    <li class="py-8 block  text-secondary   hover:underline transition-all hover:text-white"><a class="item text-xl md:text-lg font-medium" href="#home">Home</a></li>
+                    <li class="py-8 block  text-secondary  hover:underline transition-all hover:text-white"><a class="item text-xl md:text-lg font-medium" href="#about">About me</a></li>
+                    <li class="py-8 block  text-secondary  hover:underline transition-all hover:text-white"><a class="item text-xl md:text-lg font-medium" href="#skills">Skills</a></li>
+                    <li class="py-8 block  text-secondary  hover:underline transition-all hover:text-white"><a class="item text-xl md:text-lg font-medium" href="#Portfolio">Portfolio</a></li>
+                    <li class="py-8 block  text-secondary   hover:underline transition-all hover:text-white"><a class="item text-xl md:text-lg font-medium" href="#Contacts">Contacts</a></li>
+                </ul>
+                <hr class="line mt-[30px] lg:hidden">
+            </nav>
+            
+            <div class="flex justify-between mt-[40px] items-center lg:flex lg:items-start">
+                <div class="flex justify-between w-[100%] lg:justify-start lg:items-center">
+                    <p class="font-normal text-5xl max-w-[160px] md:text-3xl">Denis Novik</p>
+                    <p class="max-w-[153px] leading-6 text-lg lg:mt-[10px] md:text-xl" >UX | UI designer 24 years old, Minsk</p>
+                </div>
+                
+            <button class="burger hidden lg:block">
+                <span class="burger-line top-line"></span>
+                <span class="burger-line mid-line"></span>
+                <span class="burger-line bottom-line"></span>
+            </button>
+            </div>
+            <img class="mt-[30px] pb-[114px]" src="/img/main.jpg" alt="">
+        </div>
+    </header>
+
+
+
+    <section class="bg-secondaryLight h-[506px] text-center flex flex-col items-center justify-center" id="about">
+        <div class="container flex items-center justify-center">
+           <div class="max-w-[450px]">
+            <h2 class="font-bold text-4xl mb-[56px] md:text-2xl">About me</h2>
+            <p class="font-normal text-lg mb-[20px] md:text-sm">Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it</p>
+            <p class="font-normal text-lg mb-[20px] md:text-sm">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+            <p class="font-normal text-lg md:text-sm">Ready to implement excellent projects with wonderful people.</p>
+           </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="font-bold text-4xl mb-[56px] pt-[91px] md:text-2xl">My skills</h2>
+             <p class="font-normal text-lg mb-[20px] md:text-sm">I work in such programs as</p>
+            </div>
+
+            <div class="flex justify-between lg:flex-col">
+                <div class="flex flex-col items-center">
+                    <img src="/img/photoshop.svg" alt="ps">
+                    <p class="text-secondary font-bold py-[10px] w-[80px] text-center">Adobe Photoshop</p>
+                    <img class="pb-[110px]" src="/img/4-stars.svg" alt="4-stars">
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="/img/ai.svg" alt="ps">
+                    <p class="text-secondary font-bold py-[10px] w-[80px] text-center">Adobe Illustrator</p>
+                    <img class="pb-[110px]" src="/img/3-stars.svg" alt="3-stars">
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <img src="/img/ae.svg" alt="ps">
+                    <p class="text-secondary font-bold py-[10px] w-[80px] text-center items-center">Adobe <span>AfterEffects</span></p>
+                    <img class="pb-[110px]" src="/img/4-stars.svg" alt="4-stars">
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="/img/figma.svg" alt="ps">
+                    <p class="text-secondary font-bold py-[10px] w-[80px] text-center">Figma</p>
+                    <img class="pb-[110px]" src="/img/4-stars.svg" alt="4-stars">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-secondaryLight " id="Portfolio">
+        <div class="container text-center">
+            <h2 class="font-bold text-4xl mb-[56px] pt-[113px] pb-[53px] md:text-2xl">Portfolio</h2>
+            <div class="">
+                <img src="/img/portfolio1.jpg" alt="img">
+                <p class="font-normal text-lg underline mt-[63px] mb-[40px]">Online fashion store - Homepage</p>
+            </div>
+
+            <div class="">
+                <img src="/img/portfolio2.jpg" alt="img">
+                <p class="font-normal text-lg underline mt-[63px] mb-[40px]">Reebok Store - Concept</p>
+            </div>
+
+            <div class="">
+                <img src="/img/portfolio3.jpg" alt="img">
+                <p class="font-normal text-lg underline mt-[63px] pb-[40px]">Braun Landing Page - Concept</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contacts">
+        <div class="container text-center items-center justify-center flex flex-col">
+            <h2 class="font-bold text-4xl mb-[16px] pt-[113px] md:text-2xl">Contacts</h2>
+            <p class="text-lg font-normal w-[275px] md:text-xl">Want to know more or just chat? You are welcome!</p>
+            <a class="btn mt-[30px] mb-[94px] md:text-xl lg:w-[80%]" href="#">Send message</a>
+
+            <div class="flex justify-between items-center mb-11">
+                <a href="#"><img class="mr-[61px] block" src="/img/in.svg" alt="img"></a>
+                <a href="#"><img class="mr-[61px] block" src="/img/inst.svg" alt="img"></a>
+                <a href="#"><img class="mr-[61px] block" src="/img/be.svg" alt="img"></a>
+                <a href="#"><img class="block" src="/img/drible.svg" alt="img"></a>
+            </div>
+            <p class="w-[243px] text-sm text-secondary font-normal mb-[123px] md:text-xl">Like me on LinkedIn, Instagram, Behance, Dribble</p>
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
